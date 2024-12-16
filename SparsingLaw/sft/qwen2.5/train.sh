@@ -1,0 +1,31 @@
+export CUDA_VISIBLE_DEVICES=1,2
+llamafactory-cli train \
+    --stage sft \
+    --do_train True \
+    --model_name_or_path /home/gxhe/models/models--Qwen--Qwen2.5-0.5B/snapshots/060db6499f32faf8b98477b0a26969ef7d8b9987 \
+    --preprocessing_num_workers 16 \
+    --finetuning_type full \
+    --template default \
+    --flash_attn auto \
+    --dataset_dir /home/gxhe/workspace/LLaMA-Factory/data \
+    --dataset alpaca_en_demo \
+    --cutoff_len 2048 \
+    --learning_rate 5e-05 \
+    --num_train_epochs 3.0 \
+    --max_samples 100000 \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 8 \
+    --lr_scheduler_type cosine \
+    --max_grad_norm 1.0 \
+    --logging_steps 5 \
+    --save_steps 100 \
+    --warmup_steps 0 \
+    --packing False \
+    --report_to none \
+    --output_dir saves/Qwen2-0.5B/full/train_2024-12-10-06-42-51 \
+    --bf16 True \
+    --plot_loss True \
+    --ddp_timeout 180000000 \
+    --include_num_input_tokens_seen True \
+    --optim adamw_torch \
+    --split_layers 11,12 # 对于qwen2.5,这里只能是0～23的layer_id

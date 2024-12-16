@@ -1,0 +1,5 @@
+cache_dir: null
+lang: zh
+last_model: Yi-1.5-9B-Chat
+path_dict:
+  Yi-1.5-9B-Chat: /home/gxhe/models/sft/3-0

@@ -1,0 +1,14 @@
+[INFO|2024-11-18 09:02:59] parser.py:355 >> Process rank: 6, device: cuda:6, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
+[INFO|2024-11-18 09:02:59] logging.py:157 >> Replace eos token: <|im_end|>
+
+[INFO|2024-11-18 09:03:00] parser.py:355 >> Process rank: 3, device: cuda:3, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
+[INFO|2024-11-18 09:03:00] parser.py:355 >> Process rank: 2, device: cuda:2, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
+[INFO|2024-11-18 09:03:00] parser.py:355 >> Process rank: 1, device: cuda:1, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
+[INFO|2024-11-18 09:03:00] parser.py:355 >> Process rank: 5, device: cuda:5, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
+[INFO|2024-11-18 09:03:00] parser.py:355 >> Process rank: 7, device: cuda:7, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+
